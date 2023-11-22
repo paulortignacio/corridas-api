@@ -72,8 +72,8 @@ REST_FRAMEWORK = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:4200',
-    '655ae7807e367c3bafd75e3e--ubiquitous-snickerdoodle-998267.netlify.app/'
+    'http://localhost:4200', 
+    'https://ubiquitous-snickerdoodle-998267.netlify.app',
 ]
 
 REST_USE_JWT = True
