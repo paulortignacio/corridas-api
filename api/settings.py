@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ft33ub=u6tya@esu@4#$k&yjej7-cvax)d7z7seoe%bzoz6pmq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['corridasapi-8xt2jifx.b4a.run' ,'localhost', '127.0.0.1', 'corridas-api']
+ALLOWED_HOSTS = ['corridasapi1-0qtf945p.b4a.run' ,'localhost', '127.0.0.1', 'corridas-api']
 
 
 # Application definition
