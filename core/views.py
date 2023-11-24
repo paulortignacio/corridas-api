@@ -8,6 +8,8 @@ from .serializers import AdministradorSerializer, OrganizadorSerializer, AtletaS
 class AdministradorViewSet(viewsets.ModelViewSet):
     queryset = Administrador.objects.all()
     serializer_class = AdministradorSerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['username','password']
 
 class OrganizadorViewSet(viewsets.ModelViewSet):
     queryset = Organizador.objects.all()
@@ -18,6 +20,8 @@ class OrganizadorViewSet(viewsets.ModelViewSet):
 class AtletaViewSet(viewsets.ModelViewSet):
     queryset = Atleta.objects.all()
     serializer_class = AtletaSerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['username','password']
 
 class ContatoOrganizadorViewSet(viewsets.ModelViewSet):
     queryset = ContatoOrganizador.objects.all()

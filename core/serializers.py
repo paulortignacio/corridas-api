@@ -4,17 +4,17 @@ from .models import Administrador, Organizador, Atleta, Estado, Cidade, ContatoO
 class AdministradorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Administrador
-        fields = ('id', 'nome')
+        fields = ('id', 'nome', 'username', 'password')
 
 class OrganizadorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Organizador
-        fields = ('id', 'nome')
+        fields = ('id', 'nome', 'username', 'password')
 
 class AtletaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Atleta
-        fields = ('id', 'nome', 'data_nascimento', 'genero', 'cidade')
+        fields = ('id', 'nome', 'data_nascimento', 'genero', 'cidade', 'username', 'password')
 
 class EstadoSerializer(serializers.ModelSerializer):
     class Meta:
