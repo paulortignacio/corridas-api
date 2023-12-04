@@ -73,7 +73,7 @@ CORS_ALLOWED_ORIGINS = [
     'https://ubiquitous-snickerdoodle-998267.netlify.app',
 ]
 
-REST_USE_JWT = True
+REST_USE_JWT = True # true
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
