@@ -61,7 +61,7 @@ class ContatoOrganizador(models.Model):
     organizador = models.ForeignKey(Organizador, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f'{self.tipo_contato} - {self.contato}'
+        return f'{self.tipo_contato} - {self.valor}'
     
 class ContatoAtleta(models.Model):
     id = models.AutoField(primary_key=True)
@@ -71,7 +71,7 @@ class ContatoAtleta(models.Model):
     atleta = models.ForeignKey(Atleta, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f'{self.tipo_contato} - {self.contato}'
+        return f'{self.tipo_contato} - {self.valor}'
 
 class Corrida(models.Model):
     id = models.AutoField(primary_key=True)
